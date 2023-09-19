@@ -205,9 +205,13 @@ footer span {
     nav {
         display: none;
     }
+
+    .mobile-foot {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1445px) {
     main {
         justify-content: start;
         max-height: 100vh;
@@ -220,9 +224,17 @@ footer span {
     }
 
     .post {
-        width: 240px;
-        height: 240px;
+        width: 250px;
+        height: 250px;
     }
+
+    .post-bottom {
+        font-size: .8rem;
+        line-height: 1rem;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
 
     .main-wrapper {
         justify-content: space-between;
