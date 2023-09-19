@@ -100,6 +100,7 @@ section {
     gap: 30px;
     flex-wrap: nowrap;
     width: 100%;
+    height: auto;
     /* margin-top: 35px; */
 }
 
@@ -118,7 +119,7 @@ section {
 
 .post {
     max-width: 350px;
-    height: auto;
+    max-height: 350px;
     aspect-ratio: 1 / 1;
     background-image: url(karl-hedin-MlOfRf86J2s-unsplash.jpg);
     background-size: cover;
@@ -218,7 +219,7 @@ footer span {
 .mobile-foot {
     display: flex;
     justify-content: space-around;
-/* position: fixed; */
+    position: fixed;
     bottom: 0;
     align-items: center;
     padding: .5em;
@@ -357,7 +358,7 @@ footer span {
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 601px){
     main {
         width: 100%;
         margin: 0;
@@ -366,6 +367,8 @@ footer span {
     section {
         width: 100%;
         gap: 50px;
+        flex-direction: column;
+        height: auto;
     }
 
     .main-wrapper {
