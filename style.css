@@ -126,6 +126,17 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 300ms;
+}
+
+/* .post-link:hover {
+    transform: translateY(50px);
+    color: pink;
+} */
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgb(97, 97, 97);
 }
 
 .post-top {
