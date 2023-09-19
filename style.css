@@ -22,7 +22,7 @@ aside {
     gap: 3rem;
     padding: 3rem 2rem;
     width: 250px;
-    height: 100vh;
+    height: 100%;
     border-right: 1px solid #B4B4B4;
 }
 
@@ -80,14 +80,18 @@ aside-ul:nth-child(1) {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 35px;
+    /* gap: 35%; */
 }
 
 main {
-    width: 70%;
+    height: 800px;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
+    gap: 2em;
 }
 
 section {
@@ -95,15 +99,15 @@ section {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    width: 80%;
-    margin-top: 35px;
+    width: 100%;
+    /* margin-top: 35px; */
 }
 
 .h2-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 13px;
 }
 
 .post-link {
@@ -112,8 +116,9 @@ section {
 }
 
 .post {
-    width: 300px;
-    height: 300px;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     background-image: url(karl-hedin-MlOfRf86J2s-unsplash.jpg);
     background-size: cover;
     border-radius: 10px;
@@ -211,7 +216,15 @@ footer span {
     }
 }
 
-@media screen and (max-width: 1445px) {
+@media screen and (max-width: 1600px) {
+    .post {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+
+/* @media screen and (max-width: 1445px) {
     main {
         justify-content: start;
         max-height: 100vh;
@@ -219,13 +232,13 @@ footer span {
     }
 
     section {
-        width: 90%;
+        width: 100%;
         margin: 0px;
     }
 
     .post {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     .post-bottom {
@@ -246,7 +259,7 @@ footer span {
 
 }
 
-@media screen and (max-height: 700px), (min-width: 1200px) {
+@media screen and (max-height: 700px), (max-width: 1200px) {
     .post {
         max-height: 200px;
         max-width: 200px;
@@ -270,7 +283,7 @@ footer span {
     nav {
         visibility: hidden;
     }
-}
+} */
 
 @media screen and (max-width: 992px) {
     aside {
