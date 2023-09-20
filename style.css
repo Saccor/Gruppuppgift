@@ -394,6 +394,17 @@ footer span {
     }
 }
 
+@media (max-width: 750px) {
+    .post-bottom p {
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+
+    .post-bottom {
+        margin-bottom: 10px;
+    }
+}
+
 
 @media screen and (max-width: 601px){
     section {
@@ -405,7 +416,17 @@ footer span {
     main {
         margin-bottom: 0;
     }
+
+    .post-bottom p {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+
+    .post-bottom {
+        margin-bottom: 20px;
+    }
 }
+
 
 @media screen and (max-width: 450px) {
     main {
@@ -458,5 +479,14 @@ footer span {
 
     .desk-foot {
         padding: 0;
+    }
+
+    .post-bottom p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .post-bottom {
+        margin-bottom: 35px;
     }
 }
