@@ -8,9 +8,10 @@
     padding: 0;
 }
 
-body {
+body, html {
     display: flex;
     font-family: 'Raleway';
+    width: 100%;
 }
 
 
@@ -329,12 +330,20 @@ footer span {
         visibility: hidden;
     }
 
+    .h2-wrapper {
+        margin: 0;
+    }
+
     body {
         flex-direction: column;
     }
 
     header {
         height: 3em;
+    }
+
+    main {
+        margin-bottom: 100px;
     }
 
     nav {
@@ -372,6 +381,7 @@ footer span {
 
     .mobile-foot nav {
         visibility: visible;
+        padding: 1em;
     }
 }
 
@@ -382,15 +392,32 @@ footer span {
         align-items: center;
         gap: 50px;
     }
+    
+    main {
+        margin-bottom: 0;
+    }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     main {
         margin: 0;
         width: 100%;
         gap: 72px;
-        margin-top: 10px;
+        margin-top: 40px;
     }
+
+    body {
+        min-width: 425px;
+        /* height: auto; */
+    }
+
+    .main-wrapper {
+        width: 100%;
+    }
+
+    /* body {
+        max-width: 500px;
+    } */
 
     nav {
         z-index: 999;
@@ -398,6 +425,8 @@ footer span {
 
     section {
         gap: 72px;
+        align-items: center;
+        width: 100%;
     }
 
     .post-link {
@@ -416,5 +445,9 @@ footer span {
         position: relative;
         top: -72px;
         background: white;
+    }
+
+    .desk-foot {
+        padding: 0;
     }
 }
