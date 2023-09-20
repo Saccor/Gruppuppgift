@@ -64,6 +64,12 @@ h1 {
     height: 25px;
     width: 25px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.icon-aside {
+    height: 25px;
+    width: 25px;
 }
 
 aside-ul:nth-child(1) {
@@ -261,11 +267,22 @@ footer span {
     }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1350px) {
     .post {
         max-width: 300px;
         max-height: 300px;
     }
+
+    /* main {
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+    }
+
+    section {
+        width: 50%;
+    }
+     */
 }
 
 @media (max-width: 1300px) {
@@ -336,11 +353,12 @@ footer span {
 
 @media screen and (max-width: 993px) {
     aside {
-        visibility: hidden;
+        display: none;
     }
 
     .h2-wrapper {
         margin: 0;
+        /* justify-content: center; */
     }
 
     body {
@@ -352,7 +370,8 @@ footer span {
     }
 
     main {
-        margin-bottom: 100px;
+        /* margin-bottom: 50px; */
+        margin-top: 3em;
     }
 
     nav {
@@ -369,7 +388,7 @@ footer span {
     }
 
     .h2-wrapper {
-        visibility: hidden;
+        display: none;
     }
 
     section {
@@ -385,7 +404,7 @@ footer span {
     }
 
     .desk-foot {
-        visibility: hidden;
+        display: none;
     }
 
     .mobile-foot nav {
@@ -403,6 +422,10 @@ footer span {
     .post-bottom {
         margin-bottom: 10px;
     }
+
+    main {
+        margin-top: 8em;
+    }
 }
 
 
@@ -410,11 +433,12 @@ footer span {
     section {
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap:2em;
     }
     
     main {
-        margin-bottom: 0;
+        margin: 2em 0 100px 0;
+        padding-bottom: 60px;
     }
 
     .post-bottom p {
@@ -430,10 +454,11 @@ footer span {
 
 @media screen and (max-width: 450px) {
     main {
-        margin: 0;
+        margin: 75px 0;
         width: 100%;
         gap: 72px;
-        margin-top: 40px;
+        /* margin-top: 75px;
+        margin-bottom: 100px; */
     }
 
     body {
