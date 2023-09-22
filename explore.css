@@ -165,6 +165,8 @@ img, picture {
 .card__place {
    width: 11px;
    height: 12px;
+   display: flex;
+   margin-right: 7px;
 }
 
 .card__img {
