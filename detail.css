@@ -87,14 +87,14 @@ main {
   align-items: center;
 }
 
-section {
+/* section {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
   width: 80%;
   margin-top: 35px;
-}
+} */
 
 .post {
   width: 300px;
@@ -178,9 +178,35 @@ footer span {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: ;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin: 
+}
+
+.profile img {
+  width: 35px;
+}
+
+.profile-cont {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 /* media queries  */
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   nav {
     display: none;
   }
@@ -383,4 +409,4 @@ p {
   {
     font-size: .5rem;
   }
-}
+} */
