@@ -290,6 +290,13 @@ footer span {
      */
 }
 
+@media screen and (max-height: 900px){
+    .post {
+        width: 250px;
+        height: 250px;
+    }
+}
+
 @media (max-width: 1300px) {
     main {
         width: 70%;
