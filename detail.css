@@ -62,6 +62,7 @@ h1 {
   height: 25px;
   width: 25px;
   border-radius: 50%;
+  object-fit:cover;
 }
 
 aside-ul:nth-child(1) {
@@ -96,35 +97,6 @@ section {
   margin-top: 35px;
 }
 
-.post {
-  width: 300px;
-  height: 300px;
-  background-image: url(/images/karl-hedin-MlOfRf86J2s-unsplash.jpg);
-  background-size: cover;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.post-top {
-  background: rgba(255, 255, 255, 0.705);
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  align-items: center;
-}
-
-.post-bottom {
-  padding: 0.5em 1em;
-  background: #313131;
-  color: white;
-  font-size: 16px;
-  margin-bottom: 30px;
-  font-weight: bold;
-  line-height: 1.5rem;
-}
-
 h2 {
   font-size: 18px;
   margin-left: 5px;
@@ -132,6 +104,7 @@ h2 {
 
 hr {
   border: 1px solid rgb(0, 0, 0);
+  width: 80%;
 }
 
 h3 {
@@ -141,28 +114,25 @@ h3 {
 .img-name {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
-
-.post-img {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-}
-
-.post-like {
-  height: 20px;
-  width: 20px;
-}
-
-/* footer  */
 
 footer {
+  width: 100%;
+}
+
+.desk-foot {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem;
   border-top: 1px solid #b4b4b4;
+  width: 100%;
+}
+
+.desk-foot a {
+  color: inherit;
+  text-decoration: none;
 }
 
 footer ul {
@@ -191,11 +161,6 @@ footer span {
     width: 90%;
     margin-top: 90px;
   }
-
-  .post {
-    width: 240px;
-    height: 240px;
-  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -203,10 +168,6 @@ footer span {
     width: 100%;
   }
 
-  .post {
-    width: 240px;
-    height: 240px;
-  }
 }
 
 @media screen and (max-width: 999px) {
@@ -222,16 +183,22 @@ footer span {
     height: 3em;
   }
 
+hr {
+  display: none;
+}
+.datum {
+  display: none;
+}
+
   nav {
     width: 100%;
-    padding: 0.5em 1em;
+    padding: .5em 1em;
     background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0px;
     border-bottom: 1px solid #000000;
+    
   }
 
   .h2-wrapper {
@@ -243,10 +210,6 @@ footer span {
     margin-top: -5px;
   }
 
-  .post {
-    width: 250px;
-    height: 250px;
-  }
 }
 
 .bild1 {
@@ -259,11 +222,12 @@ footer span {
 }
 
 .sida {
-  width: 827px;
-  height: 592px;
+  max-width: 827px;
+  height: auto;
   top: 327px;
   left: 431px;
   gap: 50px;
+  margin: 0 100px;
 }
 
 .container {
@@ -272,28 +236,24 @@ footer span {
   padding: 30px, 0px, 30px, 0px;
   border: 1px, 0px, 0px, 0px;
   gap: 281px;
+  border-top: 1px solid black;
+  width: 100%;
+  margin: 0.5rem 0 0.5rem 0;
+  justify-content: flex-start;
 }
-
 
 .container2 {
   border-top: 1px solid black;
   width: 100%;
-  margin: -150px 0 20px 0;
+  margin: 0.5rem 0 0.5rem 0;
   justify-content: flex-start;
-}
-
-.portratt {
-  font-size: 16px;
-  line-height: 20px;
-  float: right;
-  margin: -20px;
 }
 
 .huvud {
   width: 100%;
-  height: 253px; 
+  height: 253px;
   left: auto;
-  background-image: url(hin-bong-yeung-jF946mh5QrA-unsplash.jpg);
+  background-image: url('hin-bong-yeung-jF946mh5QrA-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -317,7 +277,7 @@ p {
   margin-top: 50px;
 }
 .about {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-size: 38px;
   font-weight: 700;
   line-height: 45px;
@@ -326,8 +286,8 @@ p {
 }
 
 .aboutme {
-  font-family: Raleway;
-  font-size: 26px;
+  font-family: "Raleway";
+  font-size: 20px;
   font-weight: 400;
   line-height: 31px;
   letter-spacing: 0em;
@@ -343,44 +303,217 @@ p {
   text-align: left;
 }
 
-.namn {
+span {
   font-family: Raleway;
   font-size: 32px;
   font-weight: 700;
-  line-height: 38px;
-  letter-spacing: 0em;
-  text-align: right;
-  margin-right: 120px;
-  margin-top: -20px;
 }
-
 
 .flex-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
-
+  align-items: center;
 }
 .flex-container2 {
   display: flex;
   flex-direction: column;
   align-items: right;
   margin: -30px;
+  justify-content: center;
 }
 
 .likes {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: right;
-  margin: 35px;
-  margin-left: -80px;  
+  margin-top: 20px;
+  margin-left: -80px;
 }
 @media screen and( max-width:1200px) {
-  .sida p, .Lorem, .about, .aboutme
-  {
-    font-size: .5rem;
+  .sida p,
+  .Lorem,
+  .about,
+  .aboutme {
+    font-size: 0.5rem;
+  }
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height:fit-content;
+  margin: 3rem;
+  padding: 20px 0;
+  margin-top: -20px;
+}
+
+.profile img {
+  width: 100px;
+  align-items: left;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.profile-cont {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-left: -80px;
+  margin: 35px;
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    display: none;
+  }
+
+  .mobile-foot {
+    display: none;
+  }
+
+
+}
+@media screen and (max-height: 900px) {
+}
+
+@media (max-width: 1300px) {
+  main {
+    width: 70%;
+  }
+}
+
+
+@media screen and (max-width: 993px) {
+  aside {
+    display: none;
+  }
+
+  .h2-wrapper {
+    display: none;
+    /* justify-content: center; */
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  header {
+    height: 3em;
+  }
+
+  main {
+    /* margin-top: 3em; */
+    width:95%;
+  }
+
+  .mobile-foot {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height:40px;
+    /* padding:1rem; */
+  }
+
+  .mobile-foot nav {
+    width: 100%;
+    padding: 0.5em 1em;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+    visibility: visible;
+  }
+
+  .h2-wrapper {
+    display: none;
+  }
+
+  section {
+    width: 100%;
+    margin-top: -5px;
+    margin: 0;
+  }
+
+  .desk-foot {
+    display: none;
+  }
+
+  /* .mobile-foot {
+    position: fixed;
+    bottom: 0px;
+  } */
+
+  .mobile-foot nav {
+    visibility: visible;
+    padding: 0.9em;
+  }
+}
+
+
+@media (max-width: 750px) {
+  main {
+    margin-top: 8em;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  main {
+    margin: 2em 0 100px 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    margin: 75px 0;
+    width: 100%;
+    gap: 72px;
+  }
+
+  body {
+    min-width: 425px;
+  }
+
+  .main-wrapper {
+    width: 100%;
+  }
+
+  nav {
+    z-index: 999;
+  }
+
+  section {
+    gap: 72px;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .desk-foot {
+    padding: 0;
   }
 }

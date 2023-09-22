@@ -409,11 +409,6 @@ footer span {
         margin: 0;
     }
 
-    .post {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1 / 1;
-    }
 
     .desk-foot {
         display: none;
@@ -422,19 +417,12 @@ footer span {
     .mobile-foot nav {
         visibility: visible;
         padding: .9em;
+        margin-bottom: 2px;
+        
     }
 }
 
 @media (max-width: 750px) {
-    .post-bottom p {
-        font-size: .7rem;
-        line-height: 1rem;
-    }
-
-    .post-bottom {
-        margin-bottom: 10px;
-    }
-
     main {
         margin-top: 8em;
     }
@@ -452,15 +440,6 @@ footer span {
         margin: 2em 0 100px 0;
         padding-bottom: 60px;
     }
-
-    .post-bottom p {
-        font-size: .9rem;
-        line-height: 1.5rem;
-    }
-
-    .post-bottom {
-        margin-bottom: 20px;
-    }
 }
 
 
@@ -469,8 +448,6 @@ footer span {
         margin: 75px 0;
         width: 100%;
         gap: 72px;
-        /* margin-top: 75px;
-        margin-bottom: 100px; */
     }
 
     body {
